@@ -13,7 +13,7 @@
         <p class="level-item has-text-centered">
           <a class="link is-info">Past Locations</a>
         </p>
-        <a href="https://github.com/ray0095" class="level-item has-text-centered">
+        <a href="index.html" class="level-item has-text-centered">
           <img src="assets/whatsthat.png" alt="" style="height: 60px;">
         </a>
         <p class="level-item has-text-centered">
@@ -23,7 +23,7 @@
 
   <section class="section main">
     <div class="container">
-            <form class="box">
+            <form class="box" action="upload.php" method="post" enctype="multipart/form-data">
                 <h1 class="title">
                     Welcome to Whatsthat
                   </h1>
@@ -49,22 +49,22 @@
             
                 <div class="file has-name">
                     <label class="file-label">
-                    <input class="file-input" type="file" name="resume">
-                    <span class="file-cta">
-                        <span class="file-icon">
-                        <i class="fas fa-camera-retro"></i>
+                        <input class="file-input" type="file" name="fileToUpload" id="fileToUpload">
+                        <span class="file-cta">
+                            <span class="file-icon">
+                            <i class="fas fa-camera-retro"></i>
+                            </span>
+                            <span class="file-label">
+                            Take a photo
+                            </span>
                         </span>
-                        <span class="file-label">
-                        Take a photo
+                        <span class="file-name">
+                            Screen Shot 2017-07-29 at 15.54.25.png
                         </span>
-                    </span>
-                    <span class="file-name">
-                        Screen Shot 2017-07-29 at 15.54.25.png
-                    </span>
                     </label>
                 </div>
             
-                <button class="button is-primary btn" id="go-btn">Go</button>
+                <button class="button is-primary btn" id="go-btn" type="submit">Go</button>
             </form>
 
     </div>
